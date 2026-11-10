@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SlideShare Downloader</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="hdr">
+    <img class="logo" src="icons/icon48.png" width="28" height="28" alt="" />
+    <div>
+      <h1>SlideShare Downloader</h1>
+      <p class="tag">Free public SlideShare &amp; Scribd downloader</p>
+    </div>
+  </header>
+
+  <label class="lbl" for="url">Presentation or document link</label>
+  <input id="url" type="url" inputmode="url" spellcheck="false" autocomplete="off"
+    placeholder="https://www.slideshare.net/… or scribd.com/document/…" />
+
+  <p id="hint" class="hint" hidden></p>
+
+  <div class="actions">
+    <button id="btn-go" class="btn primary" type="button">Open in SlideShare Downloader</button>
+    <button id="btn-ss" class="btn ghost" type="button">SlideShare tool</button>
+    <button id="btn-sc" class="btn ghost" type="button">Scribd tool</button>
+  </div>
+
+  <p class="foot">
+    Public content only. Link is copied so you can paste it on
+    <a href="https://slidesharedownloadr.com/" target="_blank" rel="noopener">slidesharedownloadr.com</a>.
+    No paywall bypass.
+  </p>
+  <script src="popup.js"></script>
+</body>
+</html>
